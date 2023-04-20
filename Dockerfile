@@ -10,7 +10,9 @@ RUN npm install
 #    source dest
 COPY . .
 
-EXPOSE 3000
+ENV PORT 3000
+
+EXPOSE $PORT
 
 # only run in container
 CMD [ "node", "index.js" ]
