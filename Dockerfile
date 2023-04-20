@@ -10,7 +10,9 @@ RUN npm install
 #    source dest
 COPY . .
 
-ENV PORT 3000
+ARG DEFAULT_PORT=3000
+
+ENV PORT $DEFAULT_PORT
 
 EXPOSE $PORT
 
