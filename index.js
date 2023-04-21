@@ -11,7 +11,7 @@ dotenv.config()
 const app = express()
 app.use( bodyParser() )
 
-const db = mongoose.connect( 'mongodb://localhost:27017/docker-db', {
+const db = mongoose.connect( 'mongodb://my-mongo/docker-db', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 } )
